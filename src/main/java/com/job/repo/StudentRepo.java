@@ -6,6 +6,6 @@ import com.job.entity.Student;
 
 public interface StudentRepo  extends JpaRepository<Student,Integer>{
 	
-	public Student findByEmailAndPwd(String email,String pwd);
+	public Student findByEmailAndPwd(String email,String password);
 
 }
