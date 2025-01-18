@@ -14,7 +14,8 @@ import com.job.service.StudentService;
 public class StudentController {
 	
 	@Autowired
-	private StudentService service;
+	private StudentService studentService;
+	
 	@PostMapping("register")
 	public ResponseEntity<String> saveUser(@RequestBody Student student)
 	{
