@@ -12,7 +12,7 @@ public class StudentService {
 	@Autowired
 	private StudentRepo srepo;
 	@Autowired
-	private EmailUtils utils;
+	private EmailUtils Email;
 	
 	public String registerStudent(Student student)
 	{
