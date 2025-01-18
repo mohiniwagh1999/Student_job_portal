@@ -20,7 +20,7 @@ public class StudentController {
 	public ResponseEntity<String> saveUser(@RequestBody Student student)
 	{
 		String registerStudent = service.registerStudent(student);
-		return new ResponseEntity<>(registerStudent,HttpStatus.CREATED);
+		return new ResponseEntity<>(registerStudent,HttpStatus.OK);
 	}
 	
 	@PostMapping("/login")
