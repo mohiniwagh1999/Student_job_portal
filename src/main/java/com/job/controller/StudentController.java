@@ -14,19 +14,19 @@ import com.job.service.StudentService;
 public class StudentController {
 	
 	@Autowired
-	private StudentService studentService;
+	private StudentService service;
 	
 	@PostMapping("register")
 	public ResponseEntity<String> saveUser(@RequestBody Student student)
 	{
-		String registerStudent = studentService.registerStudent(student);
+		String registerStudent = service.registerStudent(student);
 		return new ResponseEntity<>(registerStudent,HttpStatus.CREATED);
 	}
 	
 	@PostMapping("/login")
 	public ResponseEntity<String> login(@RequestBody Student s)
 	{
-		String loginStudent = studentService.loginStudent(s);
+		String loginStudent = service.loginStudent(s);
 		return new ResponseEntity<>(loginStudent,HttpStatus.OK);
 	}
 

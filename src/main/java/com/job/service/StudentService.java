@@ -10,13 +10,13 @@ import com.job.utils.EmailUtils;
 @Service
 public class StudentService {
 	@Autowired
-	private StudentRepo repo;
+	private StudentRepo srepo;
 	@Autowired
 	private EmailUtils utils;
 	
 	public String registerStudent(Student student)
 	{
-		Student save = repo.save(student);
+		Student save = srepo.save(student);
 		if(save.getId()!=null)
 		{
 		String subject="your account is created";
@@ -32,7 +32,7 @@ public class StudentService {
 
 	public String loginStudent(Student student)
 	{
-		Student byEmailAndPwd = repo.findByEmailAndPwd(student.getEmail(), student.getPwd());
+		Student byEmailAndPwd = srepo.findByEmailAndPwd(student.getEmail(), student.getPwd());
 		
 		return "welcome :" +byEmailAndPwd.getName();
 	}
