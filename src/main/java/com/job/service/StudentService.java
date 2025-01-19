@@ -40,5 +40,22 @@ public class StudentService {
 	//update password 
 	//avoid duplicate email entry
 	
+	public void m1()
+	{
+		System.out.println("not completed");
+	}
+	
+	
+	
+	
+	
+	public void m2()
+	{
+		System.out.println("completed.............");
+	}
+	
+	
+	
+	
 	
 }
