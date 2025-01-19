@@ -55,11 +55,7 @@ public class StudentService {
 	}
 	
 	
-
-	public void m3()
-	{
-		System.out.println("mohini waghamare");
-	}
+	
 	
 	
 }
