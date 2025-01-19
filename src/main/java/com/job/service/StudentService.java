@@ -41,4 +41,13 @@ public class StudentService {
 	//avoid duplicate email entry
 	
 	
+	public void m2()
+	{
+		System.out.println("completed.............");
+	}
+	
+	
+	
+	
+	
 }
